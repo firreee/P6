@@ -3,7 +3,7 @@ def calculate_calories(minutes):
 
 def program():
     print("Calorie calculation")
-    print("-----------------------")
+    print("---------------------------------")
     time = input("Enter running time in minutes: ")
 
     while not time.isdigit() or int(time) <= 5:
@@ -14,12 +14,12 @@ def program():
 
     minutes = 5
     print("Calorie calculation")
-    print("-----------")
+    print("---------------------------------")
     while minutes <= time:
         calories = calculate_calories(minutes)
         print(f"Minutes: {minutes:.1f} burns {calories:.1f} calories")
         minutes += 5
-    print("-----------")
+    print("---------------------------------")
 
 choice = 'y'
 while choice == 'y':
