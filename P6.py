@@ -1,4 +1,4 @@
-def calculate_calories(minutes):
+def main(minutes):
     return minutes * 4.9
 
 def program():
@@ -16,7 +16,7 @@ def program():
     print("Calorie calculation")
     print("---------------------------------")
     while minutes <= time:
-        calories = calculate_calories(minutes)
+        calories = main(minutes)
         print(f"Minutes: {minutes:.1f} burns {calories:.1f} calories")
         minutes += 5
     print("---------------------------------")
